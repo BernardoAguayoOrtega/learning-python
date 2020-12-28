@@ -2,8 +2,12 @@
 # Example file for HelloWorld
 #
 
-print("Hello world <3")
+def __main__():
+  print("Hello world <3")
 
-name = input("What is your name? ")
+  name = input("What is your name? ")
 
-print("Nice to meet you,", name)
+  print("Nice to meet you,", name)
+
+if __name__ == "__main__":
+  __main__()
