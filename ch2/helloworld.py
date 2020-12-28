@@ -2,7 +2,7 @@
 # Example file for HelloWorld
 #
 
-def __main__():
+def main():
   print("Hello world <3")
 
   name = input("What is your name? ")
@@ -10,4 +10,4 @@ def __main__():
   print("Nice to meet you,", name)
 
 if __name__ == "__main__":
-  __main__()
+  main()
