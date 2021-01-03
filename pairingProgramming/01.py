@@ -31,3 +31,17 @@
 # 'aA' in stones
 
 # print('aA' in stones)
+
+# Input: s = "codeleet", indices = [4,5,6,7,0,2,1,3]
+# Output: "leetcode"
+
+letters = "codeleet"
+indices = [4,5,6,7,0,2,1,3]
+
+# Return double of n 
+def addition(index, letter): 
+    return (index, letter)
+
+numbers = (1, 2, 3, 4) 
+result = list(map(addition, indices, letters)) 
+print(result.sort())
