@@ -6,10 +6,15 @@
 import calendar
 
 # create a plain text calendar
-
+c = calendar.TextCalendar(calendar.SUNDAY)
+st = c.formatmonth(2021, 1, 0,0 )
+sr = c.formatyear(2021)
+print(st)
 
 # create an HTML formatted calendar
-
+hc = calendar.HTMLCalendar(calendar.SUNDAY)
+st = hc.formatmonth(2021, 1)
+print(st)
 
 # loop over the days of a month
 # zeroes mean that the day of the week is in an overlapping month
