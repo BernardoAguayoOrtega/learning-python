@@ -27,6 +27,22 @@ def main2():
     f.write('This is new line from other method #' + str(line) + '\r\n')
 
   f.close()
+  
+def main3():
+  f = open("textfile.txt", 'r')
+
+  if f.mode == 'r':
+    contens = f.read()
+    print(contens)
+    
+def main4():
+  f = open("textfile.txt", 'r')
+
+  if f.mode == 'r':
+    fl = f.readlines()
+    
+    for line in fl:
+      print(line)
 
 if __name__ == "__main__":
-  main2()
+  main4()
