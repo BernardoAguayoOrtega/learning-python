@@ -26,10 +26,18 @@ def main():
     path.split(path.realpath('textfile.txt'))
   ))
   # Get the modification time
-
+  t = time.ctime(path.getmtime('textfile.txt'))
+  
+  print(t)
   
   # Calculate how long ago the item was modified
 
+def main2():
+  td = datetime.datetime.now() - datetime.datetime.fromtimestamp(
+    path.getmtime('textfile.txt')
+  )
+  
+  print(str(td))
   
 if __name__ == "__main__":
-  main()
+  main2()
