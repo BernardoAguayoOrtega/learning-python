@@ -21,10 +21,20 @@ def printResults(data):
     print(earthquake['properties']['place'])
 
   # print the events that only have a magnitude greater than 4
-
+  for earthquake in theJSON['features']:
+    if earthquake['properties']['mag'] >= 4.0:
+      print(
+        "%2.1f" % earthquake['properties']['mag'], 
+        earthquake['properties']['place']
+        )
 
   # print only the events where at least 1 person reported feeling something
+  for earthquake in theJSON['features']:
+    feltReports = earthquake["properties"]["felt"]
 
+    if feltReports != None:
+      if feltReports > 0:
+        print(feltReports)
   
 def main():
   # define a variable to hold the source URL
